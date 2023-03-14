@@ -1,0 +1,38 @@
+table {
+    overflow: auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #da9cb8}
+  
+  th {
+    background-color: #7f345e;
+    color: rgb(6, 6, 6);
+  }
+
+
+  .button {
+    background-color: #f009ec; 
+    border: none;
+    color: rgb(12, 11, 11);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+.title-blue{
+color: rgb(247, 10, 192);
+}
+
+.title-sky{
+color: rgb(0, 255, 247);
+}

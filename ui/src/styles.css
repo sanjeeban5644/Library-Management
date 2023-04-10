@@ -12,3 +12,13 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
   }
+
+html {
+    background-image: url('/assets/pictures/libpic.jpg');
+    background-size: cover;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+  

@@ -15,16 +15,16 @@
         <th>Address</th>
         <th>Phone</th>
         <th>E-mail</th>
-       
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody *ngIf="publishers.length > 0">
       <tr *ngFor="let publisher of publishers">
-        <td>{{publisher.id}}</td>
-        <td>{{publisher.name}}</td>
-        <td>{{publisher.address}}</td>
-        <td>{{publisher.phone}}</td>
-        <td>{{publisher.email}}</td>
+        <td class="bold">{{publisher.id}}</td>
+        <td class="bold">{{publisher.name}}</td>
+        <td class="bold">{{publisher.address}}</td>
+        <td class="bold">{{publisher.phone}}</td>
+        <td class="bold">{{publisher.email}}</td>
         <td>
           <button (click)="deletePublisher(publisher.id)">Delete</button>
         </td>

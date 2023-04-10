@@ -16,17 +16,17 @@
         <th>Roll</th>
         <th>BirthDate</th>
         <th>Mobile</th>
-       
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody *ngIf="students.length > 0">
       <tr *ngFor="let student of students">
-        <td>{{student.id}}</td>
-        <td>{{student.name}}</td>
-        <td>{{student.dept}}</td>
-        <td>{{student.roll}}</td>
-        <td>{{student.dob}}</td>
-        <td>{{student.mobile}}</td>
+        <td class="bold">{{student.id}}</td>
+        <td class="bold">{{student.name}}</td>
+        <td class="bold">{{student.dept}}</td>
+        <td class="bold">{{student.roll}}</td>
+        <td class="bold">{{student.dob}}</td>
+        <td class="bold">{{student.mobile}}</td>
         <td>
           <button (click)="deleteStudent(student.id)">Delete</button>
         </td>

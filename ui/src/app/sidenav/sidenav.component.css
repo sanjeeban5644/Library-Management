@@ -10,6 +10,49 @@
     overflow-x: hidden;
     padding-top: 20px;
   }
+  
+  .boxbooks {
+    border: 1px solid #070000; 
+    padding: 10px; 
+    background-color: #566aee;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .boxadmin {
+    border: 1px solid #070000; 
+    padding: 10px; 
+    background-color: #e737e7;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .boxpublisher {
+    border: 1px solid #070000; 
+    padding: 10px; 
+    background-color: #64eb78;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .boxauthor {
+    border: 1px solid #070000; 
+    padding: 10px; 
+    background-color: #65d7f3;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .boxstudent {
+    border: 1px solid #070000; 
+    padding: 10px; 
+    background-color: #ee5686;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  a {
+    font-weight: bold;
+    position: relative;
+  }
+  
+  
+  
 
 
   .sidenav a {

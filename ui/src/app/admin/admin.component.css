@@ -9,16 +9,18 @@ table {
     padding: 8px;
   }
   
-  tr:nth-child(even){background-color: #8ebbf6}
+  tr:nth-child(even){background-color: #ed9bed}
+  tr:nth-child(odd){background-color: #ed9bed}
   
   th {
-    background-color: #568be5;
+    background-color: #e737e7;
     color: rgb(13, 12, 12);
   }
 
 
   .button {
-    background-color: #7182f1; /* Green */
+    font-weight: bold;
+    background-color: #e90ae9;
     border: none;
     color: rgb(4, 4, 4);
     padding: 15px 32px;
@@ -30,9 +32,11 @@ table {
   }
 
 .title-blue{
-color: rgb(19, 0, 128);
+  border: 1px solid #070000; 
+  padding: 10px; 
+  background-color: #e658e6;
+  margin-right: 400px;
+  margin-left: 400px;
+  border-radius: 15px;
 }
 
-.title-sky{
-color: rgb(0, 255, 247);
-}

@@ -1,4 +1,7 @@
 <!-- <h1  [ngClass]="isGreen? 'title-green':'title-red'" >{{title}} </h1> -->
+
+
+
 <div style="text-align: center;">
     <h1 [ngClass]="isGreen? 'title-blue':'title-sky'">{{title}}</h1>
   </div>
@@ -19,19 +22,21 @@
         <th>Category</th>
         <th>Genre</th>
         <th>Subgenre</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let book of books">
-        <td>{{book.name}}</td>
-        <td>{{book.author}}</td>
-        <td>{{book.isbn}}</td>
-        <td>{{book.publicationDate }}</td>
-        <td>{{book.publisher}}</td>
-        <td>{{book.copies}}</td>
-        <td>{{book.category }}</td>
-        <td>{{ book.genre }}</td>
-        <td>{{ book.subgenre }}</td>
+        <td class="bold">{{book.name}}</td>
+<td class="bold">{{book.author}}</td>
+<td class="bold">{{book.isbn}}</td>
+<td class="bold">{{book.publicationDate }}</td>
+<td class="bold">{{book.publisher}}</td>
+<td class="bold">{{book.copies}}</td>
+<td class="bold">{{book.category }}</td>
+<td class="bold">{{ book.genre }}</td>
+<td class="bold">{{ book.subgenre }}</td>
+
         <td>
           <!-- <button (click)="deleteBook(book.id)">Delete</button> -->
           <button class="DeleteButton" (click)="deleteBook(book.id)">Delete</button>

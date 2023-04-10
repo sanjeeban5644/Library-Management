@@ -5,7 +5,7 @@
   
 <h2 *ngIf="books.length<1">No Data</h2>
 <div style= "margin: 20px; float:right">
-  <button class="button"> Add Book</button>
+  <button class="button" (click)="addBooks()"> Add Book</button>
 </div>
 <table >
     <thead>
@@ -21,9 +21,9 @@
         <th>Subgenre</th>
       </tr>
     </thead>
-    <tbody *ngIf="books.length > 0">
+    <tbody>
       <tr *ngFor="let book of books">
-        <td>{{book.title}}</td>
+        <td>{{book.name}}</td>
         <td>{{book.author}}</td>
         <td>{{book.isbn}}</td>
         <td>{{book.publicationDate }}</td>
@@ -32,6 +32,10 @@
         <td>{{book.category }}</td>
         <td>{{ book.genre }}</td>
         <td>{{ book.subgenre }}</td>
+        <td>
+          <!-- <button (click)="deleteBook(book.id)">Delete</button> -->
+          <button class="DeleteButton" (click)="deleteBook(book.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>

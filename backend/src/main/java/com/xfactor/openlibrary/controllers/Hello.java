@@ -5,7 +5,7 @@ import java.util.HashMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.xfactor.openlibrary.domain.Book;
+import com.xfactor.openlibrary.Domain.Books;
 
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,7 +32,7 @@ public class Hello {
     }
 
     @PostMapping
-    public Book saveBook(@RequestBody Book book) {
+    public Books saveBook(@RequestBody Books book) {
         // book.setId(1);
         return book;
     }

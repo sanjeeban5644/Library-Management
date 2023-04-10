@@ -5,6 +5,7 @@ import { AuthorComponent } from './author/author.component';
 import { PublishersComponent } from './publishers/publishers.component';
 import { StudentComponent } from './student/student.component';
 import { AdminComponent } from './admin/admin.component';
+import { AddBooksComponent } from './add-books/add-books.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
     path : 'admin',
     component: AdminComponent,
   },
+  {
+    path : 'add-books',
+    component: AddBooksComponent
+  }
 ];
 
 @NgModule({

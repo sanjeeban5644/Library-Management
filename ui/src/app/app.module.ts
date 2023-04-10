@@ -9,7 +9,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { PublishersComponent } from './publishers/publishers.component';
 import { StudentComponent } from './student/student.component';
 import { AdminComponent } from './admin/admin.component';
-
+import { AddBooksComponent } from './add-books/add-books.component';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -21,10 +23,14 @@ import { AdminComponent } from './admin/admin.component';
     PublishersComponent,
     StudentComponent,
     AdminComponent,
+    AddBooksComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

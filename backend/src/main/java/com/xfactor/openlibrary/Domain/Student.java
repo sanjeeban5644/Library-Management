@@ -19,11 +19,11 @@ public class Student {
     @Column
     private String dept;
     @Column
-    private String rollNumber;
+    private String roll;
     @Column
-    private String BirthDate;
+    private String dob;
     @Column
-    private String mobileNo;
+    private String mobile;
     @Column
     public Long getId() {
         return id;
@@ -43,22 +43,28 @@ public class Student {
     public void setDept(String dept) {
         this.dept = dept;
     }
-    public String getRollNumber() {
-        return rollNumber;
+    public String getRoll() {
+        return roll;
     }
-    public void setRollNumber(String rollNumber) {
-        this.rollNumber = rollNumber;
+    public void setRoll(String roll) {
+        this.roll = roll;
     }
-    public String getBirthDate() {
-        return BirthDate;
+    public String getDob() {
+        return dob;
     }
-    public void setBirthDate(String birthDate) {
-        BirthDate = birthDate;
+    public void setDob(String dob) {
+        this.dob = dob;
     }
-    public String getMobileNo() {
-        return mobileNo;
+    public String getMobile() {
+        return mobile;
     }
-    public void setMobileNo(String mobileNo) {
-        this.mobileNo = mobileNo;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
+    
+    
+    
+
+
+
 }

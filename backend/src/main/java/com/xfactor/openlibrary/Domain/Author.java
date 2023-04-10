@@ -34,8 +34,8 @@ public class Author {
     public String getBirthDate() {
         return BirthDate;
     }
-    public void setBirthDate(String birthDate) {
-        BirthDate = birthDate;
+    public void setBirthDate(String BirthDate) {
+        this.BirthDate = BirthDate;
     }
     public String getNationality() {
         return nationality;

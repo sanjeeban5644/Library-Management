@@ -1,1 +1,30 @@
-<p>add-student works!</p>
+<div style="padding-left: 100px;">
+    <h1> Add Students</h1>
+
+    <form [formGroup]="studentsForm" (ngSubmit)="saveStudent()" >
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" />
+        </div>
+        <div>
+          <label for="department">Department:</label>
+          <input type="text" id="department" formControlName="dept" />
+        </div>
+        <div>
+          <label for="roll">Roll Number:</label>
+          <input type="text" id="roll" formControlName="roll" />
+        </div>
+        <div>
+          <label for="mobile">Mobile No:</label>
+          <input type="text" id="mobile" formControlName="mobile" />
+        </div>
+        <div>
+          <label for="dob">Birth Date:</label>
+          <input type="text" id="dob" formControlName="dob" />
+        </div>
+        <button type="submit">Save</button>
+      </form>
+</div>
+
+<h3> Form status: {{studentsForm.valid}}</h3>
+<h3> Form json: {{studentsForm.value | json}}</h3>

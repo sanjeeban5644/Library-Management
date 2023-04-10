@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -7,20 +8,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
+  title = 'Admin Management'
+  admins: any = [];
 
-  title='Admin Management'
-  admins = [{ "id": 1,"name": "SM","username":"san02","password":"add990#$"},
-  { "id": 2,"name": "KL","username":"lk003","password":"jjk87@@3"},
-  { "id": 3,"name": "PS","username":"ps776","password":"lkeer44$$3"},
-  { "id": 4,"name": "RT","username":"rt550","password":"tuq&65@com"},
-]
+  isGreen = true
+  
 
-
-  isGreen = true;
-
-  constructor() { }
+  constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.fetchAllAdmins()
+  }
+
+  addAdmins(){
+   
+    console.log("addAdmins button clicked!!")
+    this.router.navigateByUrl('/add-admin')
+  }
+
+  fetchAllAdmins(){
+    this.http.get("http://localhost:8081/admins/getAllAdmins")
+    .subscribe(resp =>{
+      this.admins = resp;
+      console.log('Admins retrieved successfully:', this.admins)
+    }, error => {
+      console.error('Error retrieving admins:', error);
+    });
+  }
+
+  deleteAdmin(adminId:Number){
+    
+    const url = 'http://localhost:8081/admins/deleteAdmins/' +adminId
+    console.log(url)
+    this.http.delete(url)
+    .subscribe(resp => {
+      console.log('Admin deleted successfully');
+      this.fetchAllAdmins()
+    }, error => {
+      console.error('Error deleting admin:', error);
+    });
   }
 
 }

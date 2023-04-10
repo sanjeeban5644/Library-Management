@@ -5,7 +5,7 @@
   
 <h2 *ngIf="students.length<1">No Data</h2>
 <div style= "margin: 10px; float:right">
-  <button class="button"> Add New Student</button>
+  <button class="button" (click)="addStudents()"> Add students</button>
 </div>
 <table >
     <thead>
@@ -27,7 +27,9 @@
         <td>{{student.roll}}</td>
         <td>{{student.dob}}</td>
         <td>{{student.mobile}}</td>
-      
+        <td>
+          <button (click)="deleteStudent(student.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>

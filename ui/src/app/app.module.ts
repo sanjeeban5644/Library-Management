@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookComponent } from './book/book.component';
@@ -12,10 +11,10 @@ import { AdminComponent } from './admin/admin.component';
 import { AddBooksComponent } from './add-books/add-books.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-import { AddAdminComponent } from './add-admin/add-admin.component';
-import { AddStudentComponent } from './add-student/add-student.component';
+import { AddAdminsComponent } from './add-admin/add-admin.component';
+import { AddStudentsComponent } from './add-student/add-student.component';
 import { AddPublishersComponent } from './add-publishers/add-publishers.component';
-import { AddAuthorComponent } from './add-author/add-author.component'
+import { AddAuthorsComponent } from './add-author/add-author.component'
 
 
 @NgModule({
@@ -28,10 +27,10 @@ import { AddAuthorComponent } from './add-author/add-author.component'
     StudentComponent,
     AdminComponent,
     AddBooksComponent,
-    AddAdminComponent,
-    AddStudentComponent,
+    AddAdminsComponent,
+    AddStudentsComponent,
     AddPublishersComponent,
-    AddAuthorComponent,
+    AddAuthorsComponent
   ],
   imports: [
     BrowserModule,

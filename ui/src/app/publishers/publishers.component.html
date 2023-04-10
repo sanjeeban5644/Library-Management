@@ -5,7 +5,7 @@
   
 <h2 *ngIf="publishers.length<1">No Data</h2>
 <div style= "margin: 10px; float:right">
-  <button class="button"> Add New Publisher</button>
+  <button class="button" (click)="addPublishers()"> Add Publishers</button>
 </div>
 <table >
     <thead>
@@ -25,7 +25,9 @@
         <td>{{publisher.address}}</td>
         <td>{{publisher.phone}}</td>
         <td>{{publisher.email}}</td>
-      
+        <td>
+          <button (click)="deletePublisher(publisher.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>
